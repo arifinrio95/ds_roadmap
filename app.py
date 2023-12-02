@@ -32,16 +32,25 @@ def main():
         # More topics and sub-topics can be added here
     }
 
-    # Welcome message in the main area
-    st.write("""
-    ## Selamat Datang Self-Learner! 🌟📊🚀
-    
-    Kalo kamu bingung belajar Data Science mulai dari mana dulu. Dari sini!🧭✨
-    """)
+    # Initialize a session state variable for 'started'
+    if 'started' not in st.session_state:
+        st.session_state['started'] = False
 
-    # "Start" button
-    if st.button('Mulai!'):
+    # Show welcome message and start button if not 'started'
+    if not st.session_state['started']:
+        # Welcome message in the main area
+        st.write("""
+        ## Selamat Datang Self-Learner! 🌟📊🚀
         
+        Kalo kamu bingung belajar Data Science mulai dari mana dulu. Dari sini!🧭✨
+        """)
+        
+        # Start button
+        if st.button('Mulai!'):
+            st.session_state['started'] = True
+            
+    # Once 'started', show sidebar and content
+    if st.session_state['started']:
         # Sidebar for topics
         with st.sidebar:
             st.title("Data Science Roadmap")
