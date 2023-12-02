@@ -2,7 +2,7 @@ import streamlit as st
 from _01_pandas import content as cont_pandas
 
 def main():
-    st.title("Data Science Roadmap")
+    # st.title("Data Science Roadmap")
 
     # Data structure for topics and sub-topics
     topics = {
@@ -44,6 +44,7 @@ def main():
         
         # Sidebar for topics
         with st.sidebar:
+            st.title("Data Science Roadmap")
             selected_topic = st.radio("Topik", list(topics.keys()))
             
             # Displaying sub-topics based on topic selection
