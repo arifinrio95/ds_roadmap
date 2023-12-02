@@ -54,11 +54,23 @@ def main():
         # Sidebar for topics
         with st.sidebar:
             st.title("Data Science Roadmap")
-            selected_topic = st.radio("Topik", list(topics.keys()))
+            # selected_topic = st.radio("Topik", list(topics.keys()))
             
+            # # Displaying sub-topics based on topic selection
+            # if selected_topic:
+            #     selected_subtopic = st.radio("Sub-Topik", list(topics[selected_topic].keys()))
+
+            # Sidebar for topics
+            selected_topic = st.radio("Select a Topic", list(topics.keys()))
+
             # Displaying sub-topics based on topic selection
+            selected_subtopic = None
             if selected_topic:
-                selected_subtopic = st.radio("Sub-Topik", list(topics[selected_topic].keys()))
+                selected_subtopic = st.radio("Select a Sub-Topic", list(topics[selected_topic].keys()))
+
+                # Display the title of the selected sub-topic
+                if selected_subtopic:
+                    st.write(f"### {selected_subtopic}")
     
         # Display sub-topic content in the main area
         if selected_topic and selected_subtopic:
