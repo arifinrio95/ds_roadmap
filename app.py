@@ -32,13 +32,23 @@ def main():
         # More topics and sub-topics can be added here
     }
 
+    # Welcome message in the main area
+    st.write("""
+    # Selamat Datang! 🌟📊🚀
+    
+    Kalo kamu bingung belajar Data Science mulai dari mana dulu. Dari sini!🧭✨
+    """)
+
+    # "Start" button
+    if st.button('Mulai!'):
+        
     # Sidebar for topics
     with st.sidebar:
-        selected_topic = st.radio("Select a Topic", list(topics.keys()))
+        selected_topic = st.radio("Topik", list(topics.keys()))
         
         # Displaying sub-topics based on topic selection
         if selected_topic:
-            selected_subtopic = st.radio("Select a Sub-Topic", list(topics[selected_topic].keys()))
+            selected_subtopic = st.radio("Sub-Topik", list(topics[selected_topic].keys()))
 
     # Display sub-topic content in the main area
     if selected_topic and selected_subtopic:
