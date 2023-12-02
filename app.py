@@ -1,5 +1,5 @@
 import streamlit as st
-from web_scraping_content import content as wsc
+from _01_web_scraping_content.py import content as wsc
 
 def main():
     st.title("Data Science Roadmap")
