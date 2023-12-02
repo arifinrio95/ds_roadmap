@@ -42,17 +42,17 @@ def main():
     # "Start" button
     if st.button('Mulai!'):
         
-    # Sidebar for topics
-    with st.sidebar:
-        selected_topic = st.radio("Topik", list(topics.keys()))
-        
-        # Displaying sub-topics based on topic selection
-        if selected_topic:
-            selected_subtopic = st.radio("Sub-Topik", list(topics[selected_topic].keys()))
-
-    # Display sub-topic content in the main area
-    if selected_topic and selected_subtopic:
-        st.write(topics[selected_topic][selected_subtopic])
+        # Sidebar for topics
+        with st.sidebar:
+            selected_topic = st.radio("Topik", list(topics.keys()))
+            
+            # Displaying sub-topics based on topic selection
+            if selected_topic:
+                selected_subtopic = st.radio("Sub-Topik", list(topics[selected_topic].keys()))
+    
+        # Display sub-topic content in the main area
+        if selected_topic and selected_subtopic:
+            st.write(topics[selected_topic][selected_subtopic])
 
 if __name__ == "__main__":
     main()
