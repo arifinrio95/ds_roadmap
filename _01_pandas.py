@@ -1,5 +1,7 @@
 # Pandas
 content = """
+### Pandas
+
 Pandas adalah salah satu perpustakaan (library) Python yang paling penting dan banyak digunakan dalam dunia data science dan analisis data. Ia menyediakan struktur data yang cepat, fleksibel, dan ekspresif yang dirancang untuk membuat pekerjaan dengan data "relasional" atau "berlabel" mudah dan intuitif. Kamu mungkin bertanya-tanya, "Mengapa Pandas begitu penting dalam data science?" Mari kita jelajahi lebih dalam.
 
 #### 1. Mengapa Pandas Penting dalam Data Science?
@@ -19,5 +21,6 @@ Grouping and Aggregating: Kamu dapat dengan mudah mengelompokkan data dan menera
 Time Series Analysis: Fitur ini sangat berguna dalam analisis data finansial dan ekonomi.
 
 Pandas adalah alat yang sangat kuat dan fleksibel dalam dunia Data Science. Dengan fungsinya yang beragam, mulai dari pemuatan data, pembersihan, transformasi, analisis, hingga visualisasi, Pandas memainkan peran penting dalam pipa kerja Data Science. Penguasaan Pandas akan meningkatkan kemampuan kamu dalam memanipulasi dan memahami data, membuka lebih banyak peluang dalam karir Data Science kamu.
+
 Download ebook Pandas Cheatsheet berbahasa Indonesia yang lengkap dan mudah dipahami (143 halaman) disini : https://lynk.id/datasans.book
 """
