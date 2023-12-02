@@ -48,7 +48,7 @@ def main():
         # Start button
         if st.button('Mulai!'):
             st.session_state['started'] = True
-            
+            st.experimental_rerun()
     # Once 'started', show sidebar and content
     if st.session_state['started']:
         # Sidebar for topics
