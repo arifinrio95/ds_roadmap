@@ -44,11 +44,18 @@ def main():
         
         Kalo kamu bingung belajar Data Science mulai dari mana dulu. Dari sini!🧭✨
         """)
-        
-        # Start button
-        if st.button('Mulai!'):
-            st.session_state['started'] = True
-            st.experimental_rerun()
+
+        # Center the "Start" button using columns
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            if st.button('Start'):
+                st.session_state['started'] = True
+                st.experimental_rerun()
+                
+        # # Start button
+        # if st.button('Mulai!'):
+        #     st.session_state['started'] = True
+        #     st.experimental_rerun()
     # Once 'started', show sidebar and content
     if st.session_state['started']:
         # Sidebar for topics
