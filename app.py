@@ -34,7 +34,7 @@ def main():
 
     # Welcome message in the main area
     st.write("""
-    # Selamat Datang! 🌟📊🚀
+    ## Selamat Datang Self-Learner! 🌟📊🚀
     
     Kalo kamu bingung belajar Data Science mulai dari mana dulu. Dari sini!🧭✨
     """)
