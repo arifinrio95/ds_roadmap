@@ -34,7 +34,8 @@ soup = BeautifulSoup(response.text, 'html.parser')
 # Find data within the page
 data = soup.find_all('tag_name', {'class': 'class_name'})
 for item in data:
-    print(item.get_text())```
+    print(item.get_text())
+```
 
 This script fetches the content of 'https://example.com', parses it, and prints the text of specified elements.
 
