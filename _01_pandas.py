@@ -41,6 +41,7 @@ df = pd.read_csv('data.csv')
 
 # Menulis DataFrame ke file Excel
 df.to_excel('data.xlsx')
+```
 
 #### Inspeksi Data
 Kamu dapat melihat ringkasan dan karakteristik data menggunakan metode seperti head(), tail(), dan describe().
